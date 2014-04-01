@@ -1,0 +1,57 @@
+@font-face {
+    font-family: menu_font;
+    src: url(../font1.ttf);
+}
+ul {
+    list-style: none
+}
+#animated-menu {
+    width: 900px;
+    margin-top: 140px;
+    margin-left: 200px;
+}
+.animated-item {  
+    float: left;
+    background: #4285F4;
+    color: #FFF;
+    padding: 5px 10px;
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #FFF;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.animated-item span {
+	display: block;
+	font-family: menu_font;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.animated-item .item-image {
+    width: 0;
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+}
+.animated-item .item-image img {
+    width: 100%;    
+    transition: all 200ms ease-in-out;
+}
+.image-active {
+	
+}
+.menu-mouse-enter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(1,1,1,0.6);
+	width: 100%;
+	padding-left: 5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}

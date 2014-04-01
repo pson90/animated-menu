@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Animated Menu</title>
+
+    <script type='text/javascript' src='assets/js/jquery.js'></script>
+    <script type="text/javascript" src="assets/js/animate.min.js"></script>
+    <script type="text/javascript" src="assets/js/wp-animated-menu.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul id="animated-menu">
+            <li class="animated-item">
+                <div class="item-image">
+                    <img src="assets/images/2.jpg" alt="image demo">
+                </div>
+                <div class="item-caption">
+                    <span class="menu-title">Home</span>
+                    <span class="menu-desc">Just demo menu</span>
+                </div>
+            </li>
+            <li class="animated-item">
+                <div class="item-image">
+                    <img src="assets/images/2.jpg" alt="image demo">
+                </div>
+                <div class="item-caption">
+                    <span class="menu-title">About us</span>
+                    <span class="menu-desc">Learn about me</span>
+                </div>
+            </li>
+            <li class="animated-item">
+                <div class="item-image">
+                    <img src="assets/images/2.jpg" alt="image demo">
+                </div>
+                <div class="item-caption">
+                    <span class="menu-title">Our work</span>
+                    <span class="menu-desc">Recent Project</span>
+                </div>
+            </li>
+            <li class="animated-item">
+                <div class="item-image">
+                    <img src="assets/images/2.jpg" alt="image demo">
+                </div>
+                <div class="item-caption">
+                    <span class="menu-title">Our Services</span>
+                    <span class="menu-desc">Best Services</span>
+                </div>
+            </li>
+             <li class="animated-item">
+                <div class="item-image">
+                    <img src="assets/images/2.jpg" alt="image demo">
+                </div>
+                <div class="item-caption">
+                    <span class="menu-title">Contact</span>
+                    <span class="menu-desc">Get in touch</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+       $.animatedMenu({
+            type : 'slideUp',
+            width: '180',
+            height: '90'
+       });
+    })
+    </script>
+
+</body>
+
+</html>
